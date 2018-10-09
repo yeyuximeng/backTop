@@ -1,0 +1,51 @@
+@keyframes boxAnim {
+	100% {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+.box{
+	width: 200px;
+	height: 200px;
+	margin: 150px auto;
+	transform-style: preserve-3d;
+	position: relative;
+	animation: boxAnim 10s linear infinite;
+}
+.box > div{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 200px;
+	position: absolute;
+	font-size: 50px;
+	color: rgba(105, 100, 255, 0.3);
+}
+.box div img {
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+}
+.front {
+	background-color: rgba(255, 150, 0, 0.8);
+	transform: translateZ(100px);
+}
+.back {
+	background-color: rgba(150, 150, 150, 0.8);
+	transform: translateZ(-100px);
+}
+.left {
+	background-color: rgba(255, 0, 0, 0.8);
+	transform: translateX(-100px) rotateY(-90deg);
+}
+.right {
+	background-color: rgba(0, 255, 0, 0.8);
+	transform: translateX(100px) rotateY(-90deg);
+}
+.top {
+	background-color: rgba(0, 0, 255, 0.8);
+	transform: translateY(-100px) rotateX(90deg);
+}
+.down {
+	background-color: rgba(255, 0, 255, 0.8);
+	transform: translateY(100px) rotateX(-90deg);
+}
