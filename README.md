@@ -17,3 +17,4 @@ https://github.com/yeyuximeng/backTop/releases
 ## dev5
 ## dev7
 ## dev8
+## dev6
